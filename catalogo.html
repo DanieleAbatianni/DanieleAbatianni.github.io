@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DecamerAll</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Script per il tool integrativo (sharethis) -->
+  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=65e89a41c6f7450019c090e4&product=inline-share-buttons&source=platform" async="async"></script>
+
+  <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+  <META NAME="DC.Title" CONTENT="DecamerAll"/>
+  <META NAME="DC.Creator" CONTENT="Daniele Abatianni"/>
+  <META NAME="DC.Subject" CONTENT="Decameron"/>
+  <META NAME="DC.Description" CONTENT="Un catalogo completo di tutte le novelle del Decameron, assieme a notizie sull'autore"/>
+  <META NAME="DC.Publisher" CONTENT="GitHub"/>
+  <META NAME="DC.Date" CONTENT="09-03-2024"/>
+  <META NAME="DC.Format" CONTENT="Risorsa digitale"/>
+  <META NAME="DC.Language" CONTENT="Italiano"/>
+  <META NAME="DC.Rights" CONTENT="Pubblicata con Licenza Creative Commons"/>
+  
+</head>
+
+
+<body style="background-color: #E8E5DA;">
+  <!-- header -->
+  <header class="container-fluid my-5 text-center d-flex justify-content-center">
+    <div class="container bg-image mx-5">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="title">DecamerAll</h1>
+          <h3 class="subtitle">Il catalogo completo delle novelle del Boccaccio</h3>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- nav -->
+  <nav class="navbar navbar-expand-lg bg-dark mx-5" >
+    <div class="container-fluid">
+      <!-- Bottone che appare quando la pagina è stretta -->
+      <button class="navbar-toggler" style="background-color: #000000;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Resto della navbar -->
+      <div class="collapse navbar-collapse me-3" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-3">
+            <a class="nav-link active link-light" aria-current="page" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link active link-light" href="catalogo.html"><i class="fa fa-fw fa-book"></i>Catalogo</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link active link-light" aria-current="page" href="vita.html"><i class="fa fa-fw fa-user"></i>Vita dell'autore</a>
+          </li>
+        </ul>
+        <i class="fa fa-fw fa-user-plus me-2"></i>Accedi / Iscriviti
+      </div>
+
+    </div>
+  </nav>
+
+  <nav class="breadcrumb-style mx-5 my-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb mx-3">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Catalogo</li>
+    </ol>
+  </nav>
+
+  <main>
+    <section class="container-fluid text-center my-5">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="mb-2 text-center">Catalogo completo</h1>
+            <h4 class="mb-5" style="font-style: italic;">In sfondo dorato il re o la regina di giornata</h4>
+            <a class="btn my-3 px-3" style="background-color: #BC8034; font-size: 25px;" href="#">Leggi la cornice del Decameron</a> 
+          </div>
+        </div>
+        
+         <!--  5 righe per 2 colonne-->
+        <div class="row">
+          <div class="col-6 d-flex justify-content-end">
+            <div class="card mx-2 my-2">
+              <div class="card-body">
+                <h5 class="card-title">Prima giornata</h5>
+                <p class="card-text">Mercoledì - Nessun tema</p>
+                <div class="table-responsive">
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <td class="link-novella" style="background-color: #ffd700;">Pampinea</td>
+                      <td class="link-novella">Filomena</td>
+                      <td class="link-novella">Neifile</td>
+                      <td class="link-novella">Filostrato</td>
+                      <td class="link-novella">Fiammetta</td>
+                    </tr>
+                    <tr>
+                      <td class="link-novella">Ellissa</td>
+                      <td class="link-novella">Dioneo</td>
+                      <td class="link-novella">Lauretta</td>
+                      <td class="link-novella">Emilia</td>
+                      <td class="link-novella">Panfilo</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-flex justify-content-start">
+            <div class="card mx-2 my-2">
+              <div class="card-body">
+                <h5 class="card-title">Seconda giornata</h5>
+                <p class="card-text">Giovedì - Avventure a lieto fine</p>
+                <div class="table-responsive">
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <td class="link-novella">Pampinea</td>
+                      <td class="link-novella" style="background-color: #ffd700;">Filomena</td>
+                      <td class="link-novella">Neifile</td>
+                      <td class="link-novella">Filostrato</td>
+                      <td class="link-novella">Fiammetta</td>
+                    </tr>
+                    <tr>
+                      <td class="link-novella">Ellissa</td>
+                      <td class="link-novella">Dioneo</td>
+                      <td class="link-novella">Lauretta</td>
+                      <td class="link-novella">Emilia</td>
+                      <td class="link-novella">Panfilo</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>  
+
+      <div class="row">
+          <div class="col-6 d-flex justify-content-end">
+            <div class="card mx-2 my-2">
+              <div class="card-body  ">
+                <h5 class="card-title">Terza giornata</h5>
+                <p class="card-text">Domenica - Chi ottiene o ritrova una cosa a lungo desiderata</p>
+                <div class="table-responsive">
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <td class="link-novella">Pampinea</td>
+                      <td class="link-novella">Filomena</td>
+                      <td class="link-novella" style="background-color: #ffd700;">Neifile</td>
+                      <td class="link-novella">Filostrato</td>
+                      <td class="link-novella">Fiammetta</td>
+                    </tr>
+                    <tr>
+                      <td class="link-novella">Ellissa</td>
+                      <td class="link-novella">Dioneo</td>
+                      <td class="link-novella">Lauretta</td>
+                      <td class="link-novella">Emilia</td>
+                      <td class="link-novella">Panfilo</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-flex justify-content-start">
+            <div class="card mx-2 my-2">
+              <div class="card-body  ">
+                <h5 class="card-title">Quarta giornata</h5>
+                <p class="card-text">Lunedì - Amori infelici</p>
+                <div class="table-responsive">
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <td class="link-novella">Pampinea</td>
+                      <td class="link-novella">Filomena</td>
+                      <td class="link-novella">Neifile</td>
+                      <td class="link-novella" style="background-color: #ffd700;">Filostrato</td>
+                      <td class="link-novella">Fiammetta</td>
+                    </tr>
+                    <tr>
+                      <td class="link-novella">Ellissa</td>
+                      <td class="link-novella">Dioneo</td>
+                      <td class="link-novella">Lauretta</td>
+                      <td class="link-novella">Emilia</td>
+                      <td class="link-novella">Panfilo</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>  
+      </div>
+      <div class="row">
+          <div class="col-6 d-flex justify-content-end">
+            <div class="card mx-2 my-2">
+              <div class="card-body  ">
+                <h5 class="card-title">Quinta giornata</h5>
+                <p class="card-text">Martedì - La felicità raggiunta dagli amanti dopo avventure a casi straordinari</p>
+                <div class="table-responsive">
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <td class="link-novella">Pampinea</td>
+                      <td class="link-novella">Filomena</td>
+                      <td class="link-novella">Neifile</td>
+                      <td class="link-novella">Filostrato</td>
+                      <td class="link-novella" style="background-color: #ffd700;">Fiammetta</td>
+                    </tr>
+                    <tr>
+                      <td class="link-novella">Ellissa</td>
+                      <td class="link-novella">Dioneo</td>
+                      <td class="link-novella">Lauretta</td>
+                      <td class="link-novella">Emilia</td>
+                      <td class="link-novella">Panfilo</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-flex justify-content-start">
+            <div class="card mx-2 my-2">
+              <div class="card-body  ">
+                <h5 class="card-title">Sesta giornata</h5>
+                <p class="card-text">Mercoledì - Motti spiritosi o pronti che ti tolgono dai guai</p>
+                <div class="table-responsive">
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <td class="link-novella">Pampinea</td>
+                      <td class="link-novella">Filomena</td>
+                      <td class="link-novella">Neifile</td>
+                      <td class="link-novella">Filostrato</td>
+                      <td class="link-novella">Fiammetta</td>
+                    </tr>
+                    <tr>
+                      <td class="link-novella" style="background-color: #ffd700;">Ellissa</td>
+                      <td class="link-novella">Dioneo</td>
+                      <td class="link-novella">Lauretta</td>
+                      <td class="link-novella">Emilia</td>
+                      <td class="link-novella">Panfilo</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>  
+      </div>
+      <div class="row">
+          <div class="col-6 d-flex justify-content-end">
+            <div class="card mx-2 my-2">
+              <div class="card-body  ">
+                <h5 class="card-title">Settima giornata</h5>
+                <p class="card-text">Giovedì - Le beffe fatte per amore o per paura dalle donne ai loro amanti</p>
+                <div class="table-responsive">
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <td class="link-novella">Pampinea</td>
+                      <td class="link-novella">Filomena</td>
+                      <td class="link-novella">Neifile</td>
+                      <td class="link-novella">Filostrato</td>
+                      <td class="link-novella">Fiammetta</td>
+                    </tr>
+                    <tr>
+                      <td class="link-novella">Ellissa</td>
+                      <td class="link-novella" style="background-color: #ffd700;">Dioneo</td>
+                      <td class="link-novella"><a href="item.html">Lauretta</a></td>
+                      <td class="link-novella">Emilia</td>
+                      <td class="link-novella">Panfilo</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-flex justify-content-start">
+            <div class="card mx-2 my-2">
+              <div class="card-body  ">
+                <h5 class="card-title">Ottava giornata</h5>
+                <p class="card-text">Domenica - Tutte le beffe fatte, di ogni genere</p>
+                <div class="table-responsive">
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <td class="link-novella">Pampinea</td>
+                      <td class="link-novella">Filomena</td>
+                      <td class="link-novella">Neifile</td>
+                      <td class="link-novella">Filostrato</td>
+                      <td class="link-novella">Fiammetta</td>
+                    </tr>
+                    <tr>
+                      <td class="link-novella">Ellissa</td>
+                      <td class="link-novella">Dioneo</td>
+                      <td class="link-novella" style="background-color: #ffd700;">Lauretta</td>
+                      <td class="link-novella">Emilia</td>
+                      <td class="link-novella">Panfilo</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>  
+      </div>
+      <div class="row">
+          <div class="col-6 d-flex justify-content-end">
+            <div class="card mx-2 my-2">
+              <div class="card-body  ">
+                <h5 class="card-title">Nona giornata</h5>
+                <p class="card-text">Lunedì - Ciò che più gli piace</p>
+                <div class="table-responsive">
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <td class="link-novella">Pampinea</td>
+                      <td class="link-novella">Filomena</td>
+                      <td class="link-novella">Neifile</td>
+                      <td class="link-novella">Filostrato</td>
+                      <td class="link-novella">Fiammetta</td>
+                    </tr>
+                    <tr>
+                      <td class="link-novella">Ellissa</td>
+                      <td class="link-novella">Dioneo</td>
+                      <td class="link-novella">Lauretta</td>
+                      <td class="link-novella" style="background-color: #ffd700;">Emilia</td>
+                      <td class="link-novella">Panfilo</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-flex justify-content-start">
+            <div class="card mx-2 my-2">
+              <div class="card-body  ">
+                <h5 class="card-title">Decima giornata</h5>
+                <p class="card-text">Martedì - Chi, con cortesia e magnanimità, ha avuto avventure d'amore o di altro genere</p>
+                <div class="table-responsive">
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <td class="link-novella">Pampinea</td>
+                      <td class="link-novella">Filomena</td>
+                      <td class="link-novella">Neifile</td>
+                      <td class="link-novella">Filostrato</td>
+                      <td class="link-novella">Fiammetta</td>
+                    </tr>
+                    <tr>
+                      <td class="link-novella">Ellissa</td>
+                      <td class="link-novella">Dioneo</td>
+                      <td class="link-novella">Lauretta</td>
+                      <td class="link-novella">Emilia</td>
+                      <td class="link-novella" style="background-color: #ffd700;">Panfilo</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>  
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center mb-5" style="margin-top: 100px;">
+    <h4>Condividi sui social!</h4>
+    <div class="sharethis-inline-share-buttons mb-5"></div>
+    <h4>Daniele Abatianni - IU 2023/2024 - Licenza CC BY-NC-ND</h4>
+    <h4><a href="web_project_plan.html">Web Project Plan</a></h4>
+  </footer>
+
+</body>
+
+</html>

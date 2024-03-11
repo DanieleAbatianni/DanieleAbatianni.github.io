@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DecamerAll</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Script per il tool integrativo (sharethis) -->
+  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=65e89a41c6f7450019c090e4&product=inline-share-buttons&source=platform" async="async"></script>
+  <!-- Collegnamento alla libreria javascript per cercare nel testo -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+  <META NAME="DC.Title" CONTENT="DecamerAll"/>
+  <META NAME="DC.Creator" CONTENT="Daniele Abatianni"/>
+  <META NAME="DC.Subject" CONTENT="Decameron"/>
+  <META NAME="DC.Description" CONTENT="Un catalogo completo di tutte le novelle del Decameron, assieme a notizie sull'autore"/>
+  <META NAME="DC.Publisher" CONTENT="GitHub"/>
+  <META NAME="DC.Date" CONTENT="09-03-2024"/>
+  <META NAME="DC.Format" CONTENT="Risorsa digitale"/>
+  <META NAME="DC.Language" CONTENT="Italiano"/>
+  <META NAME="DC.Rights" CONTENT="Pubblicata con Licenza Creative Commons"/>
+  
+</head>
+
+
+<body style="background-color: #E8E5DA;">
+    <!-- header -->
+    <header class="container-fluid my-5 text-center d-flex justify-content-center">
+      <div class="container bg-image mx-5">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="title">DecamerAll</h1>
+            <h3 class="subtitle">Il catalogo completo delle novelle del Boccaccio</h3>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-dark mx-5">
+      <div class="container-fluid">
+        <!-- Bottone che appare quando la pagina è stretta -->
+        <button class="navbar-toggler" style="background-color: #000000;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Resto della navbar -->
+        <div class="collapse navbar-collapse me-3" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-3">
+              <a class="nav-link link-light" aria-current="page" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link link-light" href="catalogo.html"><i class="fa fa-fw fa-book"></i>Catalogo</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link link-light" aria-current="page" href="vita.html"><i class="fa fa-fw fa-user"></i>Vita dell'autore</a>
+            </li>
+          </ul>
+          <i class="fa fa-fw fa-user-plus me-2"></i>Accedi / Iscriviti
+        </div>
+
+      </div>
+    </nav>
+
+    <nav class="breadcrumb-style mx-5 my-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb mx-3">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="catalogo.html">Catalogo</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Giornata 7 Novella 4</li>
+      </ol>
+    </nav>
+  
+    <main>
+      <section class="container-fluid text-center my-5">
+
+        <div class="row">
+          <div class="col-12">
+            <div class="txt-center">
+
+              <h1 class="mb-5">La novella di Tofano e Ghita</h1>
+              <div class="table-responsive d-flex justify-content-center mb-5">
+                <table class="categorieDC table" style="width: 70%; font-size: 20px; font-style: italic;">
+                  <thead>
+                    <tr>
+                      <th class="DC.Giornata" scope="col">Giornata</th>
+                      <th class="DC.Novella" scope="col">Novella</th>
+                      <th class="DC.Narratore" scope="col">Narratore/Narratrice</th>
+                      <th class="DC.ReDiGiornata" scope="col">Re/Regina di giornata</th>
+                      <th class="DC.Tema" scope="col">Tema di Giornata</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>7 - Settima</td>
+                      <td>4 - Quarta</td>
+                      <td>Lauretta</td>
+                      <td>Dioneo</td>
+                      <td>Le beffe fatte per amore o per paura<br>dalle donne ai loro amanti</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="mb-5 d-flex align-items-center justify-content-center text-center">
+                <h5 class="mx-3 mt-2">Cerca parole chiave nella novella</h5>
+                <form class="d-flex" role="text" style="width: 20%;">
+                  <input class="form-control me-2" type="text" id="keyword" placeholder="Cerca nel testo..." aria-label="Search">
+                </form>
+              </div>
+
+              <p class="text-start big content" style="font-size: 20px; margin-left: 100px; margin-right: 100px; line-height: 180%;">
+                Tofano chiude una notte fuor di casa la moglie, la quale, non potendo per prieghi rientrare, fa vista di gittarsi in
+                un pozzo e gittavi una gran pietra. Tofano esce di casa e
+                corre là, ed ella in casa le n’entra e serra lui di fuori, e sgridandolo il vitupera.
+                Il re, come la novella d’Elissa sentì aver fine, così senza
+                indugio verso la Lauretta rivolto le dimostrò che gli piacea
+                che ella dicesse; per che essa, senza stare, così cominciò.
+                O Amore, chenti e quali sono le tue forze! Chenti i consigli e chenti gli avvedimenti! Qual filosofo, quale artista
+                mai avrebbe potuto o potrebbe mostrare quegli argomenti, quegli avvedimenti, quegli dimostramenti che fai tu subitamente a chi seguita le tue orme? Certo la dottrina di
+                qualunque altro è tarda a rispetto della tua, sì come assai
+                bene com prender si può nelle cose davanti mostrate. Alle
+                quali, amorose donne, io una n’aggiugnerò da una semplicetta donna adoperata, tale che io non so chi altri se
+                l’avesse potuta mostrare che Amore.
+                Fu adunque già in Arezzo un ricco uomo, il quale fu Tofano nominato. A costui fu data per moglie una bellissima
+                donna, il cui nome fu monna Ghita, della quale egli, senza
+                saper perché, prestamente divenne geloso. Di che la donna
+                avvedendosi prese sdegno, e più volte avendolo della cagione della sua gelosia addomandato, né egli alcuna avendone saputa assegnare, se non cotali generali e cattive,
+                cadde nell’animo alla donna di farlo morire del male del
+                quale senza cagione aveva paura.
+                Ed essendosi avveduta che un giovane, secondo il suo
+                giudicio molto da bene, la vagheggiava, discretamente con
+                lui s’incominciò ad intendere. Ed essendo già tra lui e lei
+                tanto le cose innanzi, che altro che dare effetto con opera
+                alle parole non vi mancava, pensò la donna di trovare similmente modo a questo. E avendo già tra’ costumi cattivi
+                del suo marito conosciuto lui dilettarsi di bere, non solamente gliele cominciò a commendare, ma artatamente a
+                sollicitarlo a ciò molto spesso. E tanto ciò prese per uso,
+                che, quasi ogni volta che a grado l’era, infino allo inebriarsi
+                bevendo il conducea; e quando bene ebbro il vedea, messolo a dormire, primieramente col suo amante si ritrovò, e
+                poi sicuramente più volte di ritrovarsi con lui continuò. E
+                tanto di fidanza nella costui ebbrezza prese, che non solamente avea preso ardire di menarsi il suo amante in casa,
+                ma ella talvolta gran parte della notte s’andava con lui a
+                dimorare alla sua, la qual di quivi non era guari lontana.
+                E in questa maniera la innamorata donna continuando,
+                avvenne che il doloroso marito si venne accorgendo che
+                ella, nel confortare lui a bere, non beveva però essa mai; di
+                che egli prese sospetto non così fosse come era, cioè che la
+                donna lui inebriasse per poter poi fare il piacer suo mentre egli addormentato fosse. E volendo di questo, se così
+                fosse, far pruova, senza avere il dì bevuto, una sera tornò a
+                casa mostrandosi il più ebbro uomo, e nel parlare e ne’
+                modi, che fosse mai; il che la donna credendo né estimando che più bere gli bisognasse a ben dormire, il mise prestamente a letto. E fatto ciò, secondo che alcuna volta era
+                usata di fare, uscita di casa, alla casa del suo amante se
+                n’andò, e quivi infino alla mezza notte dimorò.
+                Tofano, come la donna non vi sentì, così si levò, e andatosene alla sua porta, quella serrò dentro e posesi alle finestre, acciò che tornare vedesse la donna e le facesse
+                manifesto che egli si fosse accorto delle maniere sue; e
+                tanto stette che la donna tornò. La quale, tornando a casa e
+                trovandosi serrata di fuori, fu oltre modo dolente, e cominciò a tentare se per forza potesse l’uscio aprire.
+                Il che poi che Tofano alquanto ebbe sofferto, disse:
+                – Donna, tu ti fatichi invano, per ciò che qua entro non
+                potrai tu entrare. Va, tornati là dove infino ad ora se’ stata,
+                e abbi per certo che tu non ci tornerai mai, infino a tanto 
+                che io di questa cosa, in presenza de’ parenti tuoi e de’ vicini, te n’avrò fatto quello onore che ti si conviene.
+                La donna lo ‘ncominciò a pregar per l’amor di Dio che
+                piacer gli dovesse d’aprirle. per ciò che ella non veniva
+                donde s’avvisava, ma da vegghiare con una sua vicina, per
+                ciò che le notti eran grandi ed ella non le poteva dormir
+                tutte, né sola in casa vegghiare.
+                Li prieghi non giovavano nulla, per ciò che quella bestia era pur disposto a volere che tutti gli aretin sapessero
+                la loro vergogna, laddove niun la sapeva. La donna, veggendo che il pregar non le valeva, ricorse al minacciare e
+                disse:
+                – Se tu non m’apri, io ti farò il più tristo uom che viva.
+                A cui Tofano rispose:
+                – E che mi potresti tu fare?
+                La donna, alla quale Amore aveva già aguzzato co’ suoi
+                consigli lo ‘ngegno, rispose:
+                – Innanzi che io voglia sofferire la vergogna che tu mi
+                vuoi fare ricevere a torto, io mi gitterò in questo pozzo che
+                qui è vicino, nel quale poi essendo trovata morta, niuna
+                persona sarà che creda che altri che tu, per ebbrezza, mi
+                v’abbia gittata; e così o ti converrà fuggire e perdere ciò
+                che tu hai ed essere in bando, o converrà che ti sia tagliata
+                la testa, sì come a micidial di me che tu veramente sarai
+                stato.
+                Per queste parole niente si mosse Tofano dalla sua
+                sciocca oppinione. Per la qual cosa la donna disse:
+                – Or ecco, io non posso più sofferire questo tuo fastidio; Dio il ti perdoni; farai riporre questa mia rocca che io
+                lascio qui.
+                E questo detto, essendo la notte tanto oscura che appena si sarebbe potuto veder l’un l’altro per la via, se
+                n’andò la donna verso il pozzo, e presa una grandissima
+                pietra che a piè del pozzo era, gridando: – Iddio, perdonami, – la lasciò cadere entro nel pozzo. La pietra giugnendo
+                nell’acqua fece un grandissimo romore; il quale come Tofano udì, credette fermamente che essa gittata vi si fosse;
+                per che, presa la secchia con la fune, subitamente si gittò
+                di casa per aiutarla, e corse al pozzo. La donna, che presso
+                all’uscio della sua casa nascosa s’era, come il vide correre
+                al pozzo, così ricoverò in casa e serrossi dentro e andossene alle finestre e cominciò a dire: – Egli si vuole inacquare
+                quando altri il bee, non poscia la notte. –
+                Tofano, udendo costei, si tenne scornato e tornossi
+                all’uscio; e non potendovi entrare, le cominciò a dire che
+                gli aprisse.
+                Ella, lasciato stare il parlar piano come infino allora
+                aveva fatto, quasi gridando cominciò a dire:
+                – Alla croce di Dio, ubriaco fastidioso, tu non c’enterrai
+                stanotte; io non posso più sofferire questi tuoi modi; egli
+                convien che io faccia vedere ad ogn’uomo chi tu se’ e a che
+                ora tu torni la notte a casa.
+                Tofano d’altra parte crucciato le ‘ncominciò a dir villania e a gridare; di che i vicini, sentendo il romore, si levarono, e uomini e donne, e fecersi alle finestre e domandarono che ciò fosse.
+                La donna cominciò piagnendo a dire: – Egli è questo
+                reo uomo, il quale mi torna ebbro la sera a casa, o
+                s’addormenta per le taverne e poscia torna a questa otta;
+                di che io avendo lungamente sofferto e dettogli molto male
+                e non giovandomi, non potendo più sofferire, ne gli ho voluta fare questa vergogna di serrarlo fuor di casa, per vedere se egli se ne ammenderà.
+                Tofano bestia, d’altra parte, diceva come il fatto era
+                stato, e minacciava forte.
+                La donna co’ suoi vicini diceva: – Or vedete che uomo
+                egli è! Che direste voi se io fossi nella via come è egli, ed
+                egli fosse in casa come sono io? In fè di Dio che io dubito
+                che voi non credeste che egli dicesse il vero. Ben potete a
+                questo conoscere il senno suo. Egli dice appunto che io ho
+                fatto ciò che io credo che egli abbia fatto egli. Egli mi credette spaventare col gittare non so che nel pozzo; ma or 
+                volesse Iddio che egli vi si fosse gittato da dovero e affogato, sì che il vino, il quale egli di soperchio ha bevuto, si fosse molto bene inacquato.
+                I vicini, e gli uomini e le donne, cominciaro a riprender
+                tutti Tofano, e a dar la colpa a lui e a dirgli villania di ciò
+                che contro alla donna diceva; e in brieve tanto andò il romore di vicino in vicino, che egli pervenne infino a’ parenti
+                della donna.
+                Li quali venuti là, e udendo la cosa e da un vicino e da
+                altro, presero Tofano e diedergli tante busse che tutto il
+                ruppono. Poi, andati in casa, presero le cose della donna e
+                con lei si ritornarono a casa loro, minacciando Tofano di
+                peggio.
+                Tofano, veggendosi mal parato, e che la sua gelosia
+                l’aveva mal condotto, sì come quegli che tutto ‘l suo ben
+                voleva alla donna, ebbe alcuni amici mezzani, e tanto procacciò che egli con buona pace riebbe la donna a casa sua
+                alla quale promise di mai più non esser geloso; e oltre a ciò
+                le diè licenza che ogni suo piacer facesse, ma sì saviamente, che egli non se ne avvedesse. E così, a modo del villan
+                matto, dopo danno fe’ patto. E viva amore, e muoia soldo e
+                tutta la brigata
+              </p>
+              <script>
+                function textFind(keyword) {
+                  if(keyword) {
+                    var content = $("p").text();
+                    var searchText = new RegExp(keyword, "ig");
+                    var matches = content.match(searchText);       
+                    
+                    if(matches) {
+                      $("p").html(content.replace(searchText, function(match){
+                        return "<span class='highlight'>"+match+"</span>";
+                      }));
+                    }else {
+                      $('.highlight').removeClass('highlight');
+                    }
+                  }else{
+                    $('.highlight').removeClass('highlight');
+                  }
+                }
+                $(document).ready(function(){
+                  $('#keyword').on('keyup', function(){
+                    textFind($(this).val());
+                  })
+                });
+              </script>
+
+              <h2 class="my-5">Riassunto ed interpretazione</h2>
+              <p class="mx-5" style="font-size: 20px;">Il tema della settima giornata, scelto da Dioneo, è quello delle beffe giocate dalle mogli ai mariti, la quarta novella è raccontata da Lauretta.
+                Continuiamo l’ analisi della quarta novella della settima giornata con una breve sintesi della trama della novella.
+                Monna Ghita è una bellissima donna, moglie di Tofano, un uomo terribilmente geloso che crede che qualsiasi uomo possa innamorarsi di sua moglie. 
+                La donna, offesa dall’inspiegabile gelosia decide di trovarsi un amante per vendicarsi. 
+                Approfittando delle cattive abitudini del marito, ogni sera lo fa ubriacare per poi metterlo a dormire e trovarsi con il suo amante. 
+                Un giorno però, Tofani si rende conto di essere l’unico dei due a bere, così decide di fingersi già ebbro per capire cosa fa la moglie 
+                dopo il suo ritiro nella camera da letto. 
+                Monna Ghita, come sempre esce di casa per trovarsi con il suo amante ma al suo ritorno si accorge di essere stata chiusa fuori di casa dal marito, 
+                con l’obiettivo di disonorarla davanti a tutto il villaggio. La donna inizialmente lo implora sottovoce da lasciarla entrare, 
+                tuttavia si rende conto che è inutile, cos?i incomincia a minacciarlo che se non l’avesse lasciata entrare si sarebbe gettata nel pozzo in cortile, 
+                così che tutti al villaggio avrebbero attribuito a lui la colpa del suicidio. 
+                Tofano non le dà retta, tuttavia quando sente un tonfo nel pozzo corre fuori dall’abitazione per soccorrerla, preoccupato per le conseguenze, 
+                L’astuta Monna Ghita, che aveva previsto la sua reazione quando aveva gettato un grosso sasso nel pozzo, 
+                subito dopo l’uscita del marito entra in casa serrando a sua volta la porta. Ora la situazione è completamente invertita: 
+                la moglie dalla finestra di casa gli dice che è inutile lamentarsi e che dovrà passare la notte all’aperto; 
+                lui stupidamente incomincia a insultarla e gridare, svegliando tutto il vicinato. 
+                Davanti al pubblico Monna Ghita accusa il marito di tornare sempre a casa tardi ed ubriaco, sostenendo che lei invece è sempre a casa da sola. 
+                I vicini rimproverano Tofano e nel frattempo sopraggiungono i parenti della donna, che lo picchiano lasciandolo tutto pesto e si riportano a casa Ghita, 
+                La narratrice propone però un lieto fine per la novella: Tofano capisce che la gelosia l’aveva mal condotto , 
+                ma soprattutto capisce di amare sua moglie. Riesce quindi a ricondurla a casa, promettendole che non sarebbe mai più stato geloso.
+                <br>Continuiamo l’ analisi quarta novella della settima giornata del Decameron con la relazione alla giornata cui appartiene.
+                Lo spostamento della brigata nella Valle delle Donne, un luogo estremamente raffinato stabilisce un contrasto tra l’ambientazione della novella 
+                e quella della cornice, secondo la regola dell’equilibrio che caratterizza il Decameron. 
+                Lauretta introduce la novella con delle lodi ad Amore, elogiandolo per essere stato in grado d’ispirare le menti degli innamorati, 
+                proprio come avviene con madonna Ghita. Nella conclusione la narratrice si schiera dalla parte femminile, 
+                inserendo un proverbio con connotazione negativa nei confronti di Tofano, criticandolo di essersi accorto di ciò a cui teneva solo dopo averlo perso 
+                (E così, a modo nel villan matto, dopo danno fe’ patto).
+                Per quanto riguarda il sistema di valori di riferimento la novella non impiega mai il linguaggio dell’amor cortese e la narrazione 
+                si caratterizza per gli insulti e le minacce reciproche. Un importante aspetto che discosta questa novella dal mondo cortese è chiaramente 
+                la beffa che Monna Ghita mette in atto contro il marito.</p>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  
+    <footer class="text-center mb-5" style="margin-top: 100px;">
+      <h4>Condividi sui social!</h4>
+      <div class="sharethis-inline-share-buttons mb-5"></div>
+      <h4>Daniele Abatianni - IU 2023/2024 - Licenza CC BY-NC-ND</h4>
+      <h4><a href="web_project_plan.html">Web Project Plan</a></h4>
+    </footer>
+  
+  </body>
+  
+  </html>
